@@ -1,3 +1,9 @@
+html,body {
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F8F8FC;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form-box{
+  padding:20px 47px 30px 47px ;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 34px 0px rgba(118.67156427221173, 113.94456521739131, 124.50000000000001, 0.08);
+}
+
+.form-box input {
+  padding: 15px 20px;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #FAFAFC;
 }
