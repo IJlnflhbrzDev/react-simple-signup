@@ -8,10 +8,7 @@ import Footer from '../footer/footer'
 import CompForm from '../form/form';
 import classes from './UseCaseToggle.module.css'
 
-
-
-
- const Home = proprs => {
+ const Home = () => {
     const [mode, setMode] = useState(true);
 
     const toggledClass = mode ? classes.light : classes.dark;

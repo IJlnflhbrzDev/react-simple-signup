@@ -1,28 +1,31 @@
-import {useState} from 'react' ; 
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import TitleForm from './dataTitleForm';
 
 function CompForm() {
-  const [title, setTitle] = useState('Register Your Account Here') ;
+  const [title, setTitle] = useState('Register Your Account Here');
   // const [conditional, setConditional] = useState(false) ;
 
-  const clickMe = (  ) => {
+  const clickMe = () => {
     setTitle('Anda Berhasil Membuat account');
   }
+
   return (
     <Form>
-        <h2>{title}</h2>
-        <p>Start your 14 days free trial.</p>
+      <h2>{title}</h2>
+      <p>Start your 14 days free trial.</p>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="text" placeholder="Your Name" />
+        {/* <Form.Control type="text" placeholder="Your Name" /> */}
+        <TitleForm />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      {/* <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="email" placeholder="Email Address" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="Phone Number" />
+        <Form.Control type="number" placeholder="Phone Number" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -31,9 +34,9 @@ function CompForm() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Control type="password" placeholder="Repeat Password" />
-      </Form.Group>
+      </Form.Group> */}
 
-      <Button variant="primary"  className='w-100' onClick={() => clickMe()}>
+      <Button variant="primary" className='w-100' onClick={() => clickMe()}>
         Submit
       </Button>
     </Form>
